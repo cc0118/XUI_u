@@ -1028,9 +1028,9 @@ public class MaterialDialog extends DialogBase
 
     @Override
     public void dismiss() {
-        if (input != null) {
-            hideKeyboard(this, builder);
-        }
+//        if (input != null) {
+        hideKeyboard(this, builder);
+//        }
         super.dismiss();
     }
 
@@ -2555,9 +2555,9 @@ public class MaterialDialog extends DialogBase
 
     private void hideKeyboard(@NonNull final DialogInterface di, @NonNull final MaterialDialog.Builder builder) {
         final MaterialDialog dialog = (MaterialDialog) di;
-        if (dialog.getInputEditText() == null) {
-            return;
-        }
+//        if (dialog.getInputEditText() == null) {
+//            return;
+//        }
         InputMethodManager imm =
                 (InputMethodManager) builder.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
         if (imm != null) {
